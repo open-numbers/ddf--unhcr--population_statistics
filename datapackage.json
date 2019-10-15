@@ -1,0 +1,210 @@
+{
+    "name": "ddf--unhcr--population_statistics",
+    "language": {
+        "name": "English",
+        "id": "en"
+    },
+    "title": "UNHCR Population Statistics",
+    "description": "the UNHCR Population Statistics Dataset",
+    "author": "Gapminder",
+    "license": "CC-BY-4.0",
+    "translations": [],
+    "version": "0.0.1",
+    "created": "2019-10-14T08:00:40.358248+00:00",
+    "resources": [
+        {
+            "name": "ddf--concepts",
+            "path": "ddf--concepts.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "name": "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--year",
+            "path": "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "asylum_residence"
+                    },
+                    {
+                        "name": "displacement_type"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "displaced_population"
+                    }
+                ],
+                "primaryKey": [
+                    "asylum_residence",
+                    "displacement_type",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--year",
+            "path": "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "asylum_residence"
+                    },
+                    {
+                        "name": "origin"
+                    },
+                    {
+                        "name": "displacement_type"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "displaced_population"
+                    }
+                ],
+                "primaryKey": [
+                    "asylum_residence",
+                    "origin",
+                    "displacement_type",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--asylum_residence",
+            "path": "ddf--entities--asylum_residence.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "asylum_residence"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "asylum_residence"
+            }
+        },
+        {
+            "name": "ddf--entities--displacement_type",
+            "path": "ddf--entities--displacement_type.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "displacement_type"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "displacement_type"
+            }
+        },
+        {
+            "name": "ddf--entities--origin",
+            "path": "ddf--entities--origin.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "origin"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "origin"
+            }
+        }
+    ],
+    "ddfSchema": {
+        "concepts": [
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            }
+        ],
+        "entities": [
+            {
+                "primaryKey": [
+                    "asylum_residence"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--asylum_residence"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "displacement_type"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--displacement_type"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "origin"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--origin"
+                ]
+            }
+        ],
+        "datapoints": [
+            {
+                "primaryKey": [
+                    "asylum_residence",
+                    "displacement_type",
+                    "origin",
+                    "year"
+                ],
+                "value": "displaced_population",
+                "resources": [
+                    "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "asylum_residence",
+                    "displacement_type",
+                    "year"
+                ],
+                "value": "displaced_population",
+                "resources": [
+                    "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--year"
+                ]
+            }
+        ],
+        "synonyms": []
+    }
+}
