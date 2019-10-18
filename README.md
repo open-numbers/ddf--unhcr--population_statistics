@@ -4,7 +4,8 @@ the UNHCR Population Statistics Dataset
 
 ## Indicators
 
-- List of indicators in this repo
+- displaced population by origin, asylum/residence, displacement type and time
+- displaced population by asylum/residence, displacement type and time
 
 ## Definition of indicator
 
@@ -22,4 +23,3 @@ the UNHCR Population Statistics Dataset
 
 
 ## Specific information about this indicator
-
