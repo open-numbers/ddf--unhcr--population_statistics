@@ -11,7 +11,6 @@ abw,others_of_concern,2018,15602.0
 abw,refugees,2013,1.0
 abw,refugees,2015,2.0
 abw,refugees,2016,1.0
-abw,refugees,2017,0.0
 abw,stateless_persons,2013,1.0
 afg,asylum_seekers,2000,3.0
 afg,asylum_seekers,2002,18.0
@@ -218,7 +217,6 @@ ago,returned_refugees,2015,2.0
 ago,returned_refugees,2016,10.0
 aia,refugees,2015,1.0
 aia,refugees,2016,1.0
-aia,refugees,2017,0.0
 alb,asylum_seekers,2000,4.0
 alb,asylum_seekers,2001,71.0
 alb,asylum_seekers,2002,52.0
@@ -529,12 +527,8 @@ arm,stateless_persons,2016,512.0
 arm,stateless_persons,2017,773.0
 arm,stateless_persons,2018,848.0
 atg,asylum_seekers,2013,1.0
-atg,asylum_seekers,2017,0.0
-atg,asylum_seekers,2018,0.0
 atg,refugees,2015,15.0
 atg,refugees,2016,4.0
-atg,refugees,2017,0.0
-atg,refugees,2018,0.0
 atg,returned_refugees,2007,4.0
 aus,asylum_seekers,2000,10894.0
 aus,asylum_seekers,2001,11582.0
@@ -1824,7 +1818,6 @@ bol,asylum_seekers,2012,8.0
 bol,asylum_seekers,2013,6.0
 bol,asylum_seekers,2014,16.0
 bol,asylum_seekers,2016,3.0
-bol,asylum_seekers,2017,0.0
 bol,asylum_seekers,2018,29.0
 bol,refugees,1972,700.0
 bol,refugees,1973,700.0
@@ -1982,15 +1975,10 @@ bra,stateless_persons,2014,2.0
 bra,stateless_persons,2015,4.0
 bra,stateless_persons,2016,4.0
 bra,stateless_persons,2017,294.0
-bra,stateless_persons,2018,0.0
 brb,asylum_seekers,2016,2.0
-brb,asylum_seekers,2017,0.0
-brb,asylum_seekers,2018,0.0
 brb,others_of_concern,2012,1.0
 brb,refugees,2013,1.0
 brb,refugees,2014,1.0
-brb,refugees,2017,0.0
-brb,refugees,2018,0.0
 brn,stateless_persons,2010,20992.0
 brn,stateless_persons,2011,20992.0
 brn,stateless_persons,2012,21009.0
@@ -2869,7 +2857,6 @@ cmr,returned_refugees,2013,402.0
 cmr,returned_refugees,2014,45.0
 cmr,returned_refugees,2015,11253.0
 cmr,returned_refugees,2016,6193.0
-cmr,returned_refugees,2017,0.0
 cod,asylum_seekers,2000,146.0
 cod,asylum_seekers,2001,308.0
 cod,asylum_seekers,2002,397.0
@@ -3131,7 +3118,6 @@ cog,returned_refugees,2014,10278.0
 cog,returned_refugees,2015,276.0
 cog,returned_refugees,2016,22.0
 cog,returned_refugees,2017,5.0
-cog,returned_refugees,2018,0.0
 col,asylum_seekers,2000,12.0
 col,asylum_seekers,2001,17.0
 col,asylum_seekers,2002,12.0
@@ -3382,8 +3368,6 @@ cub,asylum_seekers,2017,13.0
 cub,asylum_seekers,2018,21.0
 cub,others_of_concern,1998,2.0
 cub,others_of_concern,1999,1.0
-cub,others_of_concern,2017,0.0
-cub,others_of_concern,2018,0.0
 cub,refugees,1974,1300.0
 cub,refugees,1977,2600.0
 cub,refugees,1978,4000.0
@@ -4297,7 +4281,6 @@ egy,stateless_persons,2013,23.0
 egy,stateless_persons,2014,20.0
 egy,stateless_persons,2015,22.0
 egy,stateless_persons,2016,19.0
-egy,stateless_persons,2018,0.0
 eri,asylum_seekers,2002,5.0
 eri,asylum_seekers,2003,200.0
 eri,asylum_seekers,2004,449.0
@@ -4627,7 +4610,6 @@ eth,returned_refugees,2010,47.0
 eth,returned_refugees,2011,269.0
 eth,returned_refugees,2012,5.0
 eth,returned_refugees,2013,4483.0
-eth,returned_refugees,2017,0.0
 eth,returned_refugees,2018,16.0
 fin,asylum_seekers,2000,1300.0
 fin,asylum_seekers,2006,1133.0
@@ -4735,7 +4717,6 @@ fji,refugees,2014,13.0
 fji,refugees,2015,12.0
 fji,refugees,2016,12.0
 fji,refugees,2017,7.0
-fji,refugees,2018,0.0
 fra,asylum_seekers,2001,34551.0
 fra,asylum_seekers,2002,34588.0
 fra,asylum_seekers,2003,22900.0
@@ -4888,7 +4869,6 @@ gab,asylum_seekers,2013,2436.0
 gab,asylum_seekers,2014,1890.0
 gab,asylum_seekers,2015,1941.0
 gab,asylum_seekers,2016,1909.0
-gab,asylum_seekers,2017,0.0
 gab,asylum_seekers,2018,77.0
 gab,others_of_concern,2011,8651.0
 gab,others_of_concern,2012,320.0
@@ -4954,7 +4934,6 @@ gab,returned_refugees,2012,58.0
 gab,returned_refugees,2013,6.0
 gab,returned_refugees,2014,4.0
 gab,returned_refugees,2015,31.0
-gab,returned_refugees,2017,0.0
 gbr,asylum_seekers,2000,88600.0
 gbr,asylum_seekers,2001,38800.0
 gbr,asylum_seekers,2002,41300.0
@@ -5270,7 +5249,6 @@ gha,returned_refugees,2013,94.0
 gha,returned_refugees,2014,38.0
 gha,returned_refugees,2015,42.0
 gha,returned_refugees,2016,61.0
-gha,returned_refugees,2017,0.0
 gin,asylum_seekers,2001,874.0
 gin,asylum_seekers,2002,367.0
 gin,asylum_seekers,2003,2544.0
@@ -5595,13 +5573,9 @@ grc,stateless_persons,2016,198.0
 grc,stateless_persons,2017,198.0
 grc,stateless_persons,2018,198.0
 grd,asylum_seekers,2010,3.0
-grd,asylum_seekers,2017,0.0
-grd,asylum_seekers,2018,0.0
 grd,refugees,2011,3.0
 grd,refugees,2015,1.0
 grd,refugees,2016,1.0
-grd,refugees,2017,0.0
-grd,refugees,2018,0.0
 gtm,asylum_seekers,2000,7.0
 gtm,asylum_seekers,2001,9.0
 gtm,asylum_seekers,2002,10.0
@@ -5698,7 +5672,6 @@ guf,returned_refugees,1992,4580.0
 guy,asylum_seekers,2011,1.0
 guy,asylum_seekers,2014,1.0
 guy,asylum_seekers,2015,1.0
-guy,asylum_seekers,2017,0.0
 guy,asylum_seekers,2018,12.0
 guy,others_of_concern,2018,36400.0
 guy,refugees,1972,100.0
@@ -5729,7 +5702,6 @@ hkg,asylum_seekers,2012,835.0
 hkg,asylum_seekers,2013,1871.0
 hkg,asylum_seekers,2014,2248.0
 hkg,asylum_seekers,2015,2315.0
-hkg,asylum_seekers,2017,0.0
 hkg,others_of_concern,1997,600.0
 hkg,others_of_concern,1998,2.0
 hkg,others_of_concern,1999,1.0
@@ -6034,19 +6006,15 @@ hti,asylum_seekers,2013,13.0
 hti,asylum_seekers,2014,2.0
 hti,asylum_seekers,2015,11.0
 hti,asylum_seekers,2016,5.0
-hti,asylum_seekers,2017,0.0
-hti,asylum_seekers,2018,0.0
 hti,refugees,2007,1.0
 hti,refugees,2008,3.0
 hti,refugees,2009,3.0
 hti,refugees,2014,3.0
 hti,refugees,2015,3.0
 hti,refugees,2016,5.0
-hti,refugees,2017,0.0
 hti,refugees,2018,5.0
 hti,returned_refugees,1999,1.0
 hti,returned_refugees,2000,6.0
-hti,returned_refugees,2017,0.0
 hti,stateless_persons,2015,977.0
 hti,stateless_persons,2016,2302.0
 hti,stateless_persons,2017,2302.0
@@ -7141,7 +7109,6 @@ kaz,returned_refugees,2013,1.0
 kaz,returned_refugees,2014,2324.0
 kaz,returned_refugees,2015,5.0
 kaz,returned_refugees,2016,3.0
-kaz,returned_refugees,2017,0.0
 kaz,stateless_persons,2004,58291.0
 kaz,stateless_persons,2005,50576.0
 kaz,stateless_persons,2006,45698.0
@@ -7307,8 +7274,6 @@ kgz,internally_displaced_persons,2010,80000.0
 kgz,internally_displaced_persons,2011,163900.0
 kgz,internally_displaced_persons,2012,168600.0
 kgz,others_of_concern,2006,1129.0
-kgz,others_of_concern,2017,0.0
-kgz,others_of_concern,2018,0.0
 kgz,refugees,1993,21242.0
 kgz,refugees,1994,21239.0
 kgz,refugees,1995,13407.0
@@ -7448,7 +7413,6 @@ kna,asylum_seekers,2013,2.0
 kna,asylum_seekers,2014,1.0
 kna,asylum_seekers,2017,5.0
 kna,refugees,2014,1.0
-kna,refugees,2018,0.0
 kor,asylum_seekers,2000,46.0
 kor,asylum_seekers,2001,68.0
 kor,asylum_seekers,2002,72.0
@@ -7932,8 +7896,6 @@ lca,refugees,2013,5.0
 lca,refugees,2014,3.0
 lca,refugees,2015,1.0
 lca,refugees,2016,2.0
-lca,refugees,2017,0.0
-lca,refugees,2018,0.0
 lca,returned_refugees,2010,1.0
 lca,returned_refugees,2011,1.0
 lie,asylum_seekers,2001,187.0
@@ -8338,8 +8300,6 @@ mac,asylum_seekers,2013,6.0
 mac,asylum_seekers,2014,6.0
 mac,asylum_seekers,2015,7.0
 mac,asylum_seekers,2016,5.0
-mac,asylum_seekers,2017,0.0
-mac,asylum_seekers,2018,0.0
 mac,others_of_concern,2010,1.0
 mac,refugees,1964,80000.0
 mac,refugees,1965,80000.0
@@ -8582,7 +8542,6 @@ mdg,returned_refugees,2002,15.0
 mdg,returned_refugees,2010,1.0
 mdg,returned_refugees,2013,1.0
 mdg,returned_refugees,2014,1.0
-mdv,returned_refugees,2018,0.0
 mex,asylum_seekers,2000,11.0
 mex,asylum_seekers,2001,12.0
 mex,asylum_seekers,2002,23.0
@@ -8929,7 +8888,6 @@ mmr,returned_idps,2016,1346.0
 mmr,returned_idps,2017,684.0
 mmr,returned_idps,2018,379.0
 mmr,returned_refugees,2015,1.0
-mmr,returned_refugees,2017,0.0
 mmr,returned_refugees,2018,95.0
 mmr,stateless_persons,2005,236495.0
 mmr,stateless_persons,2006,669500.0
@@ -9017,8 +8975,6 @@ mng,asylum_seekers,2013,4.0
 mng,asylum_seekers,2014,9.0
 mng,asylum_seekers,2015,6.0
 mng,asylum_seekers,2016,3.0
-mng,asylum_seekers,2017,0.0
-mng,asylum_seekers,2018,0.0
 mng,others_of_concern,2016,2.0
 mng,others_of_concern,2017,5.0
 mng,others_of_concern,2018,5.0
@@ -9034,7 +8990,6 @@ mng,refugees,2014,6.0
 mng,refugees,2015,9.0
 mng,refugees,2016,8.0
 mng,refugees,2017,4.0
-mng,refugees,2018,0.0
 mng,stateless_persons,2005,581.0
 mng,stateless_persons,2006,581.0
 mng,stateless_persons,2007,75.0
@@ -9220,10 +9175,8 @@ msr,asylum_seekers,2010,14.0
 msr,asylum_seekers,2011,5.0
 msr,asylum_seekers,2012,5.0
 mus,asylum_seekers,2016,5.0
-mus,asylum_seekers,2018,0.0
 mus,refugees,1999,43.0
 mus,refugees,2001,14.0
-mus,refugees,2017,0.0
 mus,refugees,2018,11.0
 mwi,asylum_seekers,2002,11068.0
 mwi,asylum_seekers,2003,8848.0
@@ -9674,7 +9627,6 @@ nga,returned_refugees,2014,385.0
 nga,returned_refugees,2015,1.0
 nga,returned_refugees,2016,132.0
 nga,returned_refugees,2017,282761.0
-nga,returned_refugees,2018,0.0
 nic,asylum_seekers,2000,11.0
 nic,asylum_seekers,2001,21.0
 nic,asylum_seekers,2002,16.0
@@ -9696,7 +9648,6 @@ nic,asylum_seekers,2018,126.0
 nic,others_of_concern,2014,2.0
 nic,others_of_concern,2015,1.0
 nic,others_of_concern,2016,1.0
-nic,others_of_concern,2017,0.0
 nic,others_of_concern,2018,357.0
 nic,refugees,1972,50.0
 nic,refugees,1980,4100.0
@@ -9888,7 +9839,6 @@ nld_curacao,asylum_seekers,2015,30.0
 nld_curacao,asylum_seekers,2016,57.0
 nld_curacao,asylum_seekers,2017,729.0
 nld_curacao,asylum_seekers,2018,342.0
-nld_curacao,others_of_concern,2017,0.0
 nld_curacao,others_of_concern,2018,25686.0
 nld_curacao,refugees,2010,7.0
 nld_curacao,refugees,2011,6.0
@@ -10453,8 +10403,6 @@ pan,stateless_persons,2013,2.0
 pan,stateless_persons,2014,2.0
 pan,stateless_persons,2015,2.0
 pan,stateless_persons,2016,2.0
-pan,stateless_persons,2017,0.0
-pan,stateless_persons,2018,0.0
 per,asylum_seekers,2000,7.0
 per,asylum_seekers,2001,63.0
 per,asylum_seekers,2002,140.0
@@ -10539,7 +10487,6 @@ per,returned_refugees,2006,1.0
 per,returned_refugees,2007,11.0
 per,returned_refugees,2009,2.0
 per,returned_refugees,2010,1.0
-per,returned_refugees,2017,0.0
 phl,asylum_seekers,2000,20.0
 phl,asylum_seekers,2001,41.0
 phl,asylum_seekers,2002,47.0
@@ -10957,7 +10904,6 @@ pry,returned_refugees,1998,2.0
 pry,returned_refugees,2014,1.0
 pry,returned_refugees,2015,5.0
 pse,returned_refugees,2000,2.0
-pse,returned_refugees,2018,0.0
 qat,asylum_seekers,2000,4.0
 qat,asylum_seekers,2001,12.0
 qat,asylum_seekers,2002,23.0
@@ -11684,7 +11630,6 @@ sen,returned_refugees,2012,6223.0
 sen,returned_refugees,2013,1.0
 sen,returned_refugees,2015,1.0
 sen,returned_refugees,2016,1.0
-sen,returned_refugees,2017,0.0
 serbia_kosovo,asylum_seekers,2000,12.0
 serbia_kosovo,asylum_seekers,2001,53.0
 serbia_kosovo,asylum_seekers,2002,37.0
@@ -11699,10 +11644,10 @@ serbia_kosovo,asylum_seekers,2010,209.0
 serbia_kosovo,asylum_seekers,2011,399.0
 serbia_kosovo,asylum_seekers,2012,332.0
 serbia_kosovo,asylum_seekers,2013,400.0
-serbia_kosovo,asylum_seekers,2014,440.0
+serbia_kosovo,asylum_seekers,2014,438.0
 serbia_kosovo,asylum_seekers,2015,116.0
 serbia_kosovo,asylum_seekers,2016,130.0
-serbia_kosovo,asylum_seekers,2017,136.0
+serbia_kosovo,asylum_seekers,2017,132.0
 serbia_kosovo,asylum_seekers,2018,190.0
 serbia_kosovo,internally_displaced_persons,1995,490.0
 serbia_kosovo,internally_displaced_persons,1996,487.0
@@ -11723,10 +11668,10 @@ serbia_kosovo,internally_displaced_persons,2010,228442.0
 serbia_kosovo,internally_displaced_persons,2011,228215.0
 serbia_kosovo,internally_displaced_persons,2012,227821.0
 serbia_kosovo,internally_displaced_persons,2013,227495.0
-serbia_kosovo,internally_displaced_persons,2014,223139.0
+serbia_kosovo,internally_displaced_persons,2014,206026.0
 serbia_kosovo,internally_displaced_persons,2015,220002.0
 serbia_kosovo,internally_displaced_persons,2016,219633.0
-serbia_kosovo,internally_displaced_persons,2017,217453.0
+serbia_kosovo,internally_displaced_persons,2017,16406.0
 serbia_kosovo,internally_displaced_persons,2018,199584.0
 serbia_kosovo,others_of_concern,2000,85000.0
 serbia_kosovo,others_of_concern,2001,85000.0
@@ -11788,10 +11733,10 @@ serbia_kosovo,refugees,2010,73608.0
 serbia_kosovo,refugees,2011,70707.0
 serbia_kosovo,refugees,2012,66370.0
 serbia_kosovo,refugees,2013,57083.0
-serbia_kosovo,refugees,2014,43751.0
+serbia_kosovo,refugees,2014,43712.0
 serbia_kosovo,refugees,2015,35332.0
 serbia_kosovo,refugees,2016,36522.0
-serbia_kosovo,refugees,2017,32195.0
+serbia_kosovo,refugees,2017,32190.0
 serbia_kosovo,refugees,2018,30862.0
 serbia_kosovo,returned_idps,1997,23.0
 serbia_kosovo,returned_idps,1998,110000.0
@@ -11808,10 +11753,10 @@ serbia_kosovo,returned_idps,2010,1803.0
 serbia_kosovo,returned_idps,2011,845.0
 serbia_kosovo,returned_idps,2012,798.0
 serbia_kosovo,returned_idps,2013,780.0
-serbia_kosovo,returned_idps,2014,450.0
+serbia_kosovo,returned_idps,2014,285.0
 serbia_kosovo,returned_idps,2015,545.0
 serbia_kosovo,returned_idps,2016,477.0
-serbia_kosovo,returned_idps,2017,193.0
+serbia_kosovo,returned_idps,2017,87.0
 serbia_kosovo,returned_refugees,1985,260.0
 serbia_kosovo,returned_refugees,1989,430.0
 serbia_kosovo,returned_refugees,1990,240.0
@@ -11862,8 +11807,6 @@ sgp,asylum_seekers,2007,24.0
 sgp,others_of_concern,2014,1.0
 sgp,others_of_concern,2015,1.0
 sgp,others_of_concern,2016,1.0
-sgp,others_of_concern,2017,0.0
-sgp,others_of_concern,2018,0.0
 sgp,refugees,1978,730.0
 sgp,refugees,1979,900.0
 sgp,refugees,1982,480.0
@@ -11909,7 +11852,6 @@ sgp,returned_refugees,2014,1.0
 sgp,stateless_persons,2018,1303.0
 slb,asylum_seekers,2012,3.0
 slb,asylum_seekers,2013,3.0
-slb,asylum_seekers,2018,0.0
 slb,refugees,1995,2000.0
 slb,refugees,1996,2000.0
 slb,refugees,1997,800.0
@@ -11933,7 +11875,6 @@ sle,asylum_seekers,2013,38.0
 sle,asylum_seekers,2014,15.0
 sle,asylum_seekers,2015,17.0
 sle,asylum_seekers,2016,7.0
-sle,asylum_seekers,2017,0.0
 sle,internally_displaced_persons,1993,532000.0
 sle,internally_displaced_persons,1994,782000.0
 sle,internally_displaced_persons,1995,654600.0
@@ -12016,7 +11957,6 @@ slv,asylum_seekers,2011,5.0
 slv,asylum_seekers,2013,5.0
 slv,asylum_seekers,2015,1.0
 slv,asylum_seekers,2016,1.0
-slv,asylum_seekers,2017,0.0
 slv,asylum_seekers,2018,11.0
 slv,internally_displaced_persons,2017,71500.0
 slv,internally_displaced_persons,2018,71500.0
@@ -12227,8 +12167,6 @@ sur,asylum_seekers,2016,46.0
 sur,asylum_seekers,2017,62.0
 sur,asylum_seekers,2018,206.0
 sur,others_of_concern,2016,1.0
-sur,others_of_concern,2017,0.0
-sur,others_of_concern,2018,0.0
 sur,refugees,1992,52.0
 sur,refugees,1993,50.0
 sur,refugees,1994,39.0
@@ -12410,7 +12348,6 @@ svn,stateless_persons,2014,4.0
 svn,stateless_persons,2015,4.0
 svn,stateless_persons,2016,4.0
 svn,stateless_persons,2017,4.0
-svn,stateless_persons,2018,0.0
 swe,asylum_seekers,2000,10800.0
 swe,asylum_seekers,2001,17600.0
 swe,asylum_seekers,2002,33301.0
@@ -12624,7 +12561,6 @@ sxm,asylum_seekers,2013,1.0
 sxm,asylum_seekers,2014,5.0
 sxm,asylum_seekers,2015,8.0
 sxm,asylum_seekers,2016,7.0
-sxm,asylum_seekers,2017,0.0
 sxm,refugees,2010,1.0
 sxm,refugees,2011,3.0
 sxm,refugees,2012,3.0
@@ -12634,7 +12570,6 @@ sxm,refugees,2015,3.0
 sxm,refugees,2016,3.0
 sxm,refugees,2017,5.0
 sxm,refugees,2018,5.0
-syc,asylum_seekers,2017,0.0
 syc,refugees,2016,2.0
 syr,asylum_seekers,2000,2643.0
 syr,asylum_seekers,2001,605.0
@@ -12756,8 +12691,6 @@ tca,refugees,2013,4.0
 tca,refugees,2014,4.0
 tca,refugees,2015,4.0
 tca,refugees,2016,4.0
-tca,refugees,2017,0.0
-tca,refugees,2018,0.0
 tcd,asylum_seekers,2000,544.0
 tcd,asylum_seekers,2001,646.0
 tcd,asylum_seekers,2002,1034.0
@@ -12937,8 +12870,6 @@ tgo,returned_refugees,2013,664.0
 tgo,returned_refugees,2014,97.0
 tgo,returned_refugees,2015,101.0
 tgo,returned_refugees,2016,51.0
-tgo,returned_refugees,2017,0.0
-tgo,returned_refugees,2018,0.0
 tha,asylum_seekers,2000,361.0
 tha,asylum_seekers,2001,343.0
 tha,asylum_seekers,2002,1050.0
@@ -13151,8 +13082,6 @@ tkm,asylum_seekers,2005,2.0
 tkm,asylum_seekers,2006,1.0
 tkm,asylum_seekers,2007,16.0
 tkm,others_of_concern,1998,20.0
-tkm,others_of_concern,2017,0.0
-tkm,others_of_concern,2018,0.0
 tkm,refugees,1993,15400.0
 tkm,refugees,1994,15400.0
 tkm,refugees,1995,23323.0
@@ -13228,8 +13157,6 @@ tls,others_of_concern,2003,452.0
 tls,others_of_concern,2014,6.0
 tls,others_of_concern,2015,6.0
 tls,others_of_concern,2016,2.0
-tls,others_of_concern,2017,0.0
-tls,others_of_concern,2018,0.0
 tls,refugees,2002,1.0
 tls,refugees,2003,3.0
 tls,refugees,2004,3.0
@@ -13300,7 +13227,6 @@ tun,others_of_concern,2012,1.0
 tun,others_of_concern,2014,3.0
 tun,others_of_concern,2015,2.0
 tun,others_of_concern,2016,3.0
-tun,others_of_concern,2017,0.0
 tun,others_of_concern,2018,8.0
 tun,refugees,1951,2000.0
 tun,refugees,1954,2000.0
@@ -13477,7 +13403,6 @@ tur,returned_refugees,2011,215.0
 tur,returned_refugees,2012,68788.0
 tur,returned_refugees,2013,140881.0
 tur,returned_refugees,2014,133.0
-tur,returned_refugees,2018,0.0
 tur,stateless_persons,2008,2734.0
 tur,stateless_persons,2009,2739.0
 tur,stateless_persons,2010,780.0
@@ -13617,7 +13542,6 @@ tza,returned_refugees,2013,508.0
 tza,returned_refugees,2014,43.0
 tza,returned_refugees,2015,5.0
 tza,returned_refugees,2016,3541.0
-tza,returned_refugees,2017,0.0
 uga,asylum_seekers,2000,2473.0
 uga,asylum_seekers,2001,627.0
 uga,asylum_seekers,2002,544.0
@@ -13750,8 +13674,6 @@ uga,returned_refugees,2013,1013.0
 uga,returned_refugees,2014,5618.0
 uga,returned_refugees,2015,6847.0
 uga,returned_refugees,2016,23.0
-uga,returned_refugees,2017,0.0
-uga,returned_refugees,2018,0.0
 ukr,asylum_seekers,2000,80.0
 ukr,asylum_seekers,2001,183.0
 ukr,asylum_seekers,2002,400.0
@@ -14088,7 +14010,6 @@ uzb,returned_refugees,2008,21.0
 uzb,returned_refugees,2009,1.0
 uzb,returned_refugees,2010,2.0
 uzb,returned_refugees,2016,1.0
-uzb,returned_refugees,2018,0.0
 uzb,stateless_persons,2006,7.0
 uzb,stateless_persons,2007,6.0
 uzb,stateless_persons,2014,86703.0
@@ -14281,14 +14202,11 @@ ven,returned_refugees,2005,1.0
 ven,returned_refugees,2009,17.0
 ven,returned_refugees,2015,1765.0
 ven,returned_refugees,2016,154.0
-ven,returned_refugees,2018,0.0
 vgb,asylum_seekers,2009,6.0
 vgb,asylum_seekers,2013,3.0
 vgb,refugees,2010,2.0
 vgb,refugees,2011,2.0
 vgb,refugees,2012,2.0
-vgb,refugees,2017,0.0
-vgb,refugees,2018,0.0
 vnm,refugees,1971,57000.0
 vnm,refugees,1972,55000.0
 vnm,refugees,1973,35000.0
@@ -14349,7 +14267,6 @@ vut,asylum_seekers,2011,2.0
 vut,asylum_seekers,2013,1.0
 vut,asylum_seekers,2014,1.0
 vut,asylum_seekers,2015,1.0
-vut,asylum_seekers,2018,0.0
 vut,refugees,2007,1.0
 vut,refugees,2008,3.0
 vut,refugees,2009,4.0
@@ -14359,8 +14276,6 @@ vut,refugees,2013,2.0
 vut,returned_refugees,2008,1.0
 wsm,asylum_seekers,2015,3.0
 wsm,refugees,2016,3.0
-wsm,refugees,2017,0.0
-wsm,refugees,2018,0.0
 yem,asylum_seekers,2000,1411.0
 yem,asylum_seekers,2001,2361.0
 yem,asylum_seekers,2002,2095.0
@@ -14475,8 +14390,6 @@ yem,returned_refugees,2013,2907.0
 yem,returned_refugees,2014,2068.0
 yem,returned_refugees,2015,26728.0
 yem,returned_refugees,2016,2266.0
-yem,returned_refugees,2017,0.0
-yem,returned_refugees,2018,0.0
 zaf,asylum_seekers,2000,15138.0
 zaf,asylum_seekers,2001,11417.0
 zaf,asylum_seekers,2002,52451.0
