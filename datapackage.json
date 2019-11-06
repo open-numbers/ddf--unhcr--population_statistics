@@ -36,8 +36,8 @@
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--year.csv",
-      "name": "displaced_population--by--asylum_residence--displacement_type--year",
+      "path": "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--time.csv",
+      "name": "displaced_population--by--asylum_residence--displacement_type--time",
       "schema": {
         "fields": [
           {
@@ -47,7 +47,7 @@
             "name": "displacement_type"
           },
           {
-            "name": "year"
+            "name": "time"
           },
           {
             "name": "displaced_population"
@@ -56,13 +56,13 @@
         "primaryKey": [
           "asylum_residence",
           "displacement_type",
-          "year"
+          "time"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--year.csv",
-      "name": "displaced_population--by--asylum_residence--origin--displacement_type--year",
+      "path": "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--time.csv",
+      "name": "displaced_population--by--asylum_residence--origin--displacement_type--time",
       "schema": {
         "fields": [
           {
@@ -75,7 +75,7 @@
             "name": "displacement_type"
           },
           {
-            "name": "year"
+            "name": "time"
           },
           {
             "name": "displaced_population"
@@ -85,20 +85,20 @@
           "asylum_residence",
           "origin",
           "displacement_type",
-          "year"
+          "time"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--asylum_residence--year.csv",
-      "name": "displaced_population--by--asylum_residence--year",
+      "path": "ddf--datapoints--displaced_population--by--asylum_residence--time.csv",
+      "name": "displaced_population--by--asylum_residence--time",
       "schema": {
         "fields": [
           {
             "name": "asylum_residence"
           },
           {
-            "name": "year"
+            "name": "time"
           },
           {
             "name": "displaced_population"
@@ -106,13 +106,13 @@
         ],
         "primaryKey": [
           "asylum_residence",
-          "year"
+          "time"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--origin--asylum_residence--year.csv",
-      "name": "displaced_population--by--origin--asylum_residence--year",
+      "path": "ddf--datapoints--displaced_population--by--origin--asylum_residence--time.csv",
+      "name": "displaced_population--by--origin--asylum_residence--time",
       "schema": {
         "fields": [
           {
@@ -122,7 +122,7 @@
             "name": "asylum_residence"
           },
           {
-            "name": "year"
+            "name": "time"
           },
           {
             "name": "displaced_population"
@@ -131,13 +131,13 @@
         "primaryKey": [
           "origin",
           "asylum_residence",
-          "year"
+          "time"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--origin--displacement_type--year.csv",
-      "name": "displaced_population--by--origin--displacement_type--year",
+      "path": "ddf--datapoints--displaced_population--by--origin--displacement_type--time.csv",
+      "name": "displaced_population--by--origin--displacement_type--time",
       "schema": {
         "fields": [
           {
@@ -147,7 +147,7 @@
             "name": "displacement_type"
           },
           {
-            "name": "year"
+            "name": "time"
           },
           {
             "name": "displaced_population"
@@ -156,20 +156,20 @@
         "primaryKey": [
           "origin",
           "displacement_type",
-          "year"
+          "time"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--origin--year.csv",
-      "name": "displaced_population--by--origin--year",
+      "path": "ddf--datapoints--displaced_population--by--origin--time.csv",
+      "name": "displaced_population--by--origin--time",
       "schema": {
         "fields": [
           {
             "name": "origin"
           },
           {
-            "name": "year"
+            "name": "time"
           },
           {
             "name": "displaced_population"
@@ -177,7 +177,7 @@
         ],
         "primaryKey": [
           "origin",
-          "year"
+          "time"
         ]
       }
     },
@@ -309,22 +309,22 @@
           "asylum_residence",
           "asylum_residence",
           "displacement_type",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
         ]
       },
       {
         "primaryKey": [
           "asylum_residence",
           "asylum_residence",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--year"
+          "displaced_population--by--origin--asylum_residence--time"
         ]
       },
       {
@@ -332,11 +332,11 @@
           "asylum_residence",
           "displacement_type",
           "geo",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
         ]
       },
       {
@@ -344,56 +344,56 @@
           "asylum_residence",
           "displacement_type",
           "origin",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
         ]
       },
       {
         "primaryKey": [
           "asylum_residence",
           "displacement_type",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--displacement_type--year",
-          "displaced_population--by--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--displacement_type--time",
+          "displaced_population--by--origin--displacement_type--time"
         ]
       },
       {
         "primaryKey": [
           "asylum_residence",
           "geo",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--year"
+          "displaced_population--by--origin--asylum_residence--time"
         ]
       },
       {
         "primaryKey": [
           "asylum_residence",
           "origin",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--year"
+          "displaced_population--by--origin--asylum_residence--time"
         ]
       },
       {
         "primaryKey": [
           "asylum_residence",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--year",
-          "displaced_population--by--origin--year"
+          "displaced_population--by--asylum_residence--time",
+          "displaced_population--by--origin--time"
         ]
       },
       {
@@ -401,11 +401,11 @@
           "displacement_type",
           "geo",
           "geo",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
         ]
       },
       {
@@ -413,23 +413,23 @@
           "displacement_type",
           "geo",
           "origin",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
         ]
       },
       {
         "primaryKey": [
           "displacement_type",
           "geo",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--displacement_type--year",
-          "displaced_population--by--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--displacement_type--time",
+          "displaced_population--by--origin--displacement_type--time"
         ]
       },
       {
@@ -437,78 +437,78 @@
           "displacement_type",
           "origin",
           "origin",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
         ]
       },
       {
         "primaryKey": [
           "displacement_type",
           "origin",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--displacement_type--year",
-          "displaced_population--by--origin--displacement_type--year"
+          "displaced_population--by--asylum_residence--displacement_type--time",
+          "displaced_population--by--origin--displacement_type--time"
         ]
       },
       {
         "primaryKey": [
           "geo",
           "geo",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--year"
+          "displaced_population--by--origin--asylum_residence--time"
         ]
       },
       {
         "primaryKey": [
           "geo",
           "origin",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--year"
+          "displaced_population--by--origin--asylum_residence--time"
         ]
       },
       {
         "primaryKey": [
           "geo",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--year",
-          "displaced_population--by--origin--year"
+          "displaced_population--by--asylum_residence--time",
+          "displaced_population--by--origin--time"
         ]
       },
       {
         "primaryKey": [
           "origin",
           "origin",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--year"
+          "displaced_population--by--origin--asylum_residence--time"
         ]
       },
       {
         "primaryKey": [
           "origin",
-          "year"
+          "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--year",
-          "displaced_population--by--origin--year"
+          "displaced_population--by--asylum_residence--time",
+          "displaced_population--by--origin--time"
         ]
       }
     ],
