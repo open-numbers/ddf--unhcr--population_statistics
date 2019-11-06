@@ -8,9 +8,9 @@
     "description": "the UNHCR Population Statistics Dataset",
     "author": "Gapminder",
     "license": "CC-BY-4.0",
+    "created": "2019-11-06T01:57:34.231175+00:00",
     "translations": [],
     "version": "0.0.1",
-    "created": "2019-10-14T08:00:40.358248+00:00",
     "resources": [
         {
             "name": "ddf--concepts",
@@ -25,6 +25,9 @@
                     },
                     {
                         "name": "concept_type"
+                    },
+                    {
+                        "name": "domain"
                     }
                 ],
                 "primaryKey": "concept"
@@ -137,6 +140,15 @@
                     "concept"
                 ],
                 "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "domain",
                 "resources": [
                     "ddf--concepts"
                 ]
