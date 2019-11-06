@@ -1,4 +1,4 @@
-country,latitude,longitude,name,un_state,world_4region
+geo,latitude,longitude,name,un_state,world_4region
 abkh,,,Abkhazia,FALSE,europe
 abw,12.5,-69.96667,Aruba,FALSE,americas
 afg,33.0,66.0,Afghanistan,TRUE,asia
