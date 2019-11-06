@@ -1,8 +1,8 @@
-concept,name,concept_type
-asylum_residence,Country / territory of asylum/residence,entity_domain
-origin,Origin,entity_domain
-displacement_type,Displacement Type,entity_domain
-displaced_population,Displaced Population,measure
-year,Year,time
-name,Name,string
-domain,Domain,string
+concept,name,concept_type,domain
+asylum_residence,Country / territory of asylum/residence,entity_domain,
+origin,Origin,entity_domain,
+displacement_type,Displacement Type,entity_domain,
+displaced_population,Displaced Population,measure,
+year,Year,time,
+name,Name,string,
+domain,Domain,string,
