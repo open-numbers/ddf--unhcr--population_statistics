@@ -1,16 +1,14 @@
 concept,name,concept_type,domain,color
-asylum_residence,Country / territory of asylum/residence,entity_set,geo,
-origin,Origin,entity_set,geo,
+asylum_residence,Country / territory of asylum/residence,entity_domain,,
+origin,Origin,entity_domain,,
 displacement_type,Displacement Type,entity_domain,,
 displaced_population,Displaced Population,measure,,
 time,Year,time,,
 name,Name,string,,
 domain,Domain,string,,
-geo,Geographic location,entity_domain,,
 latitude,,measure,,
 longitude,,measure,,
-un_state,,boolean,,
-world_4region,,entity_set,geo,"{""shades"": {""fill3"": 2, ""print_stroke"": 5, ""print_fill"": 4, ""fill2"": 1, ""shade"": 3, ""fill1"": 0}, ""palette"": {""americas"": [""#7feb00"", ""#5de200"", ""#81f201"", ""#00b900"", ""#b5ea32"", ""#008d36""], ""europe"": [""#ffe700"", ""#fbdd00"", ""#fff400"", ""#fbaf09"", ""#ffe700"", ""#b17f4a""], ""africa"": [""#00d5e9"", ""#00c8ec"", ""#00e1ec"", ""#0098df"", ""#77dff7"", ""#0586c6""], ""asia"": [""#ff5872"", ""#ff5178"", ""#ff658a"", ""#da0025"", ""#fa4e73"", ""#b2043a""], ""_default"": [""#ffb600"", ""#ffaa14"", ""#ffc500"", ""#fb6d19"", ""#ffb600"", ""#9b4838""]}, ""selectable"": false}"
+world_4region,,entity_domain,,"{""shades"": {""fill3"": 2, ""print_stroke"": 5, ""print_fill"": 4, ""fill2"": 1, ""shade"": 3, ""fill1"": 0}, ""palette"": {""americas"": [""#7feb00"", ""#5de200"", ""#81f201"", ""#00b900"", ""#b5ea32"", ""#008d36""], ""europe"": [""#ffe700"", ""#fbdd00"", ""#fff400"", ""#fbaf09"", ""#ffe700"", ""#b17f4a""], ""africa"": [""#00d5e9"", ""#00c8ec"", ""#00e1ec"", ""#0098df"", ""#77dff7"", ""#0586c6""], ""asia"": [""#ff5872"", ""#ff5178"", ""#ff658a"", ""#da0025"", ""#fa4e73"", ""#b2043a""], ""_default"": [""#ffb600"", ""#ffaa14"", ""#ffc500"", ""#fb6d19"", ""#ffb600"", ""#9b4838""]}, ""selectable"": false}"
 color,,string,,
 description,,string,,
 name_long,,string,,

@@ -182,6 +182,30 @@
       }
     },
     {
+      "path": "ddf--entities--asylum_residence.csv",
+      "name": "asylum_residence",
+      "schema": {
+        "fields": [
+          {
+            "name": "asylum_residence"
+          },
+          {
+            "name": "latitude"
+          },
+          {
+            "name": "longitude"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "world_4region"
+          }
+        ],
+        "primaryKey": "asylum_residence"
+      }
+    },
+    {
       "path": "ddf--entities--displacement_type.csv",
       "name": "displacement_type",
       "schema": {
@@ -197,38 +221,32 @@
       }
     },
     {
-      "path": "ddf--entities--geo--asylum_residence.csv",
-      "name": "geo--asylum_residence",
-      "schema": {
-        "fields": [
-          {
-            "name": "asylum_residence"
-          },
-          {
-            "name": "is--asylum_residence"
-          }
-        ],
-        "primaryKey": "asylum_residence"
-      }
-    },
-    {
-      "path": "ddf--entities--geo--origin.csv",
-      "name": "geo--origin",
+      "path": "ddf--entities--origin.csv",
+      "name": "origin",
       "schema": {
         "fields": [
           {
             "name": "origin"
           },
           {
-            "name": "is--origin"
+            "name": "latitude"
+          },
+          {
+            "name": "longitude"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "world_4region"
           }
         ],
         "primaryKey": "origin"
       }
     },
     {
-      "path": "ddf--entities--geo--world_4region.csv",
-      "name": "geo--world_4region",
+      "path": "ddf--entities--world_4region.csv",
+      "name": "world_4region",
       "schema": {
         "fields": [
           {
@@ -239,9 +257,6 @@
           },
           {
             "name": "description"
-          },
-          {
-            "name": "is--world_4region"
           },
           {
             "name": "latitude"
@@ -267,33 +282,6 @@
         ],
         "primaryKey": "world_4region"
       }
-    },
-    {
-      "path": "ddf--entities--geo.csv",
-      "name": "geo",
-      "schema": {
-        "fields": [
-          {
-            "name": "geo"
-          },
-          {
-            "name": "latitude"
-          },
-          {
-            "name": "longitude"
-          },
-          {
-            "name": "name"
-          },
-          {
-            "name": "un_state"
-          },
-          {
-            "name": "world_4region"
-          }
-        ],
-        "primaryKey": "geo"
-      }
     }
   ],
   "ddfSchema": {
@@ -301,41 +289,6 @@
       {
         "primaryKey": [
           "asylum_residence",
-          "asylum_residence",
-          "displacement_type",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "asylum_residence",
-          "asylum_residence",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--origin--asylum_residence--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "asylum_residence",
-          "displacement_type",
-          "geo",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "asylum_residence",
           "displacement_type",
           "origin",
           "time"
@@ -354,18 +307,7 @@
         "value": "displaced_population",
         "resources": [
           "displaced_population--by--asylum_residence--displacement_type--time",
-          "displaced_population--by--origin--displacement_type--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "asylum_residence",
-          "geo",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--origin--asylum_residence--time"
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
         ]
       },
       {
@@ -387,121 +329,41 @@
         "value": "displaced_population",
         "resources": [
           "displaced_population--by--asylum_residence--time",
-          "displaced_population--by--origin--time"
+          "displaced_population--by--origin--asylum_residence--time"
         ]
       },
       {
         "primaryKey": [
           "displacement_type",
-          "geo",
-          "geo",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "displacement_type",
-          "geo",
           "origin",
           "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "displacement_type",
-          "geo",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--displacement_type--time",
+          "displaced_population--by--asylum_residence--origin--displacement_type--time",
           "displaced_population--by--origin--displacement_type--time"
         ]
       },
       {
         "primaryKey": [
           "displacement_type",
-          "origin",
-          "origin",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "displacement_type",
-          "origin",
           "time"
         ],
         "value": "displaced_population",
         "resources": [
           "displaced_population--by--asylum_residence--displacement_type--time",
+          "displaced_population--by--asylum_residence--origin--displacement_type--time",
           "displaced_population--by--origin--displacement_type--time"
         ]
       },
       {
         "primaryKey": [
-          "geo",
-          "geo",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--origin--asylum_residence--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo",
           "origin",
           "time"
         ],
         "value": "displaced_population",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--time",
-          "displaced_population--by--origin--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "origin",
-          "origin",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--origin--asylum_residence--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "origin",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--time",
+          "displaced_population--by--origin--asylum_residence--time",
           "displaced_population--by--origin--time"
         ]
       }
@@ -511,27 +373,9 @@
         "primaryKey": [
           "asylum_residence"
         ],
-        "value": "is--asylum_residence",
-        "resources": [
-          "geo--asylum_residence"
-        ]
-      },
-      {
-        "primaryKey": [
-          "asylum_residence"
-        ],
-        "value": "is--origin",
-        "resources": [
-          "geo--origin"
-        ]
-      },
-      {
-        "primaryKey": [
-          "asylum_residence"
-        ],
         "value": "latitude",
         "resources": [
-          "geo"
+          "asylum_residence"
         ]
       },
       {
@@ -540,7 +384,7 @@
         ],
         "value": "longitude",
         "resources": [
-          "geo"
+          "asylum_residence"
         ]
       },
       {
@@ -549,16 +393,7 @@
         ],
         "value": "name",
         "resources": [
-          "geo"
-        ]
-      },
-      {
-        "primaryKey": [
           "asylum_residence"
-        ],
-        "value": "un_state",
-        "resources": [
-          "geo"
         ]
       },
       {
@@ -567,7 +402,7 @@
         ],
         "value": "world_4region",
         "resources": [
-          "geo"
+          "asylum_residence"
         ]
       },
       {
@@ -581,158 +416,11 @@
       },
       {
         "primaryKey": [
-          "geo"
-        ],
-        "value": "color",
-        "resources": [
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "description",
-        "resources": [
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "is--asylum_residence",
-        "resources": [
-          "geo--asylum_residence"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "is--origin",
-        "resources": [
-          "geo--origin"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "is--world_4region",
-        "resources": [
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "latitude",
-        "resources": [
-          "geo",
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "longitude",
-        "resources": [
-          "geo",
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "name",
-        "resources": [
-          "geo",
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "name_long",
-        "resources": [
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "name_short",
-        "resources": [
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "rank",
-        "resources": [
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "shape_lores_svg",
-        "resources": [
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "un_state",
-        "resources": [
-          "geo"
-        ]
-      },
-      {
-        "primaryKey": [
-          "geo"
-        ],
-        "value": "world_4region",
-        "resources": [
-          "geo"
-        ]
-      },
-      {
-        "primaryKey": [
-          "origin"
-        ],
-        "value": "is--asylum_residence",
-        "resources": [
-          "geo--asylum_residence"
-        ]
-      },
-      {
-        "primaryKey": [
-          "origin"
-        ],
-        "value": "is--origin",
-        "resources": [
-          "geo--origin"
-        ]
-      },
-      {
-        "primaryKey": [
           "origin"
         ],
         "value": "latitude",
         "resources": [
-          "geo"
+          "origin"
         ]
       },
       {
@@ -741,7 +429,7 @@
         ],
         "value": "longitude",
         "resources": [
-          "geo"
+          "origin"
         ]
       },
       {
@@ -750,16 +438,7 @@
         ],
         "value": "name",
         "resources": [
-          "geo"
-        ]
-      },
-      {
-        "primaryKey": [
           "origin"
-        ],
-        "value": "un_state",
-        "resources": [
-          "geo"
         ]
       },
       {
@@ -768,7 +447,18 @@
         ],
         "value": "world_4region",
         "resources": [
-          "geo"
+          "origin"
+        ]
+      },
+      {
+        "primaryKey": [
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--asylum_residence--time",
+          "displaced_population--by--origin--asylum_residence--time",
+          "displaced_population--by--origin--time"
         ]
       },
       {
@@ -777,7 +467,7 @@
         ],
         "value": "color",
         "resources": [
-          "geo--world_4region"
+          "world_4region"
         ]
       },
       {
@@ -786,16 +476,7 @@
         ],
         "value": "description",
         "resources": [
-          "geo--world_4region"
-        ]
-      },
-      {
-        "primaryKey": [
           "world_4region"
-        ],
-        "value": "is--world_4region",
-        "resources": [
-          "geo--world_4region"
         ]
       },
       {
@@ -804,7 +485,7 @@
         ],
         "value": "latitude",
         "resources": [
-          "geo--world_4region"
+          "world_4region"
         ]
       },
       {
@@ -813,7 +494,7 @@
         ],
         "value": "longitude",
         "resources": [
-          "geo--world_4region"
+          "world_4region"
         ]
       },
       {
@@ -822,7 +503,7 @@
         ],
         "value": "name",
         "resources": [
-          "geo--world_4region"
+          "world_4region"
         ]
       },
       {
@@ -831,7 +512,7 @@
         ],
         "value": "name_long",
         "resources": [
-          "geo--world_4region"
+          "world_4region"
         ]
       },
       {
@@ -840,7 +521,7 @@
         ],
         "value": "name_short",
         "resources": [
-          "geo--world_4region"
+          "world_4region"
         ]
       },
       {
@@ -849,7 +530,7 @@
         ],
         "value": "rank",
         "resources": [
-          "geo--world_4region"
+          "world_4region"
         ]
       },
       {
@@ -858,7 +539,7 @@
         ],
         "value": "shape_lores_svg",
         "resources": [
-          "geo--world_4region"
+          "world_4region"
         ]
       }
     ],
