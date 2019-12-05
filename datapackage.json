@@ -645,26 +645,6 @@
       },
       {
         "primaryKey": [
-          "displacement_type",
-          "year"
-        ],
-        "value": "population_arrived",
-        "resources": [
-          "population_arrived--by--geo--displacement_type--year"
-        ]
-      },
-      {
-        "primaryKey": [
-          "displacement_type",
-          "year"
-        ],
-        "value": "population_left",
-        "resources": [
-          "population_left--by--geo--displacement_type--year"
-        ]
-      },
-      {
-        "primaryKey": [
           "geo",
           "year"
         ],
@@ -1311,24 +1291,6 @@
         "value": "rank",
         "resources": [
           "geo--main_religion_2008"
-        ]
-      },
-      {
-        "primaryKey": [
-          "year"
-        ],
-        "value": "population_arrived",
-        "resources": [
-          "population_arrived--by--geo--year"
-        ]
-      },
-      {
-        "primaryKey": [
-          "year"
-        ],
-        "value": "population_left",
-        "resources": [
-          "population_left--by--geo--year"
         ]
       },
       {
