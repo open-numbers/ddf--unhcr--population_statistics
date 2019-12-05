@@ -1,222 +1,586 @@
 {
-    "name": "ddf--unhcr--population_statistics",
-    "language": {
-        "name": "English",
-        "id": "en"
+  "name": "ddf--unhcr--population_statistics",
+  "title": "ddf--unhcr--population_statistics",
+  "description": "",
+  "version": "0.0.1",
+  "language": {
+    "id": "en",
+    "name": "English"
+  },
+  "translations": [],
+  "license": "",
+  "author": "",
+  "resources": [
+    {
+      "path": "ddf--concepts.csv",
+      "name": "ddf--concepts",
+      "schema": {
+        "fields": [
+          {
+            "name": "concept"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "concept_type"
+          },
+          {
+            "name": "domain"
+          },
+          {
+            "name": "color"
+          }
+        ],
+        "primaryKey": "concept"
+      }
     },
-    "title": "UNHCR Population Statistics",
-    "description": "the UNHCR Population Statistics Dataset",
-    "author": "Gapminder",
-    "license": "CC-BY-4.0",
-    "created": "2019-11-06T01:57:34.231175+00:00",
-    "translations": [],
-    "version": "0.0.1",
-    "resources": [
-        {
-            "name": "ddf--concepts",
-            "path": "ddf--concepts.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "concept"
-                    },
-                    {
-                        "name": "name"
-                    },
-                    {
-                        "name": "concept_type"
-                    },
-                    {
-                        "name": "domain"
-                    }
-                ],
-                "primaryKey": "concept"
-            }
-        },
-        {
-            "name": "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--year",
-            "path": "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--year.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "asylum_residence"
-                    },
-                    {
-                        "name": "displacement_type"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "displaced_population"
-                    }
-                ],
-                "primaryKey": [
-                    "asylum_residence",
-                    "displacement_type",
-                    "year"
-                ]
-            }
-        },
-        {
-            "name": "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--year",
-            "path": "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--year.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "asylum_residence"
-                    },
-                    {
-                        "name": "origin"
-                    },
-                    {
-                        "name": "displacement_type"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "displaced_population"
-                    }
-                ],
-                "primaryKey": [
-                    "asylum_residence",
-                    "origin",
-                    "displacement_type",
-                    "year"
-                ]
-            }
-        },
-        {
-            "name": "ddf--entities--asylum_residence",
-            "path": "ddf--entities--asylum_residence.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "asylum_residence"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "asylum_residence"
-            }
-        },
-        {
-            "name": "ddf--entities--displacement_type",
-            "path": "ddf--entities--displacement_type.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "displacement_type"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "displacement_type"
-            }
-        },
-        {
-            "name": "ddf--entities--origin",
-            "path": "ddf--entities--origin.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "origin"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "origin"
-            }
-        }
-    ],
-    "ddfSchema": {
-        "concepts": [
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "concept_type",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "domain",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            }
+    {
+      "path": "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--time.csv",
+      "name": "displaced_population--by--asylum_residence--displacement_type--time",
+      "schema": {
+        "fields": [
+          {
+            "name": "asylum_residence"
+          },
+          {
+            "name": "displacement_type"
+          },
+          {
+            "name": "time"
+          },
+          {
+            "name": "displaced_population"
+          }
         ],
-        "entities": [
-            {
-                "primaryKey": [
-                    "asylum_residence"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--asylum_residence"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "displacement_type"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--displacement_type"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "origin"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--entities--origin"
-                ]
-            }
+        "primaryKey": [
+          "asylum_residence",
+          "displacement_type",
+          "time"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--time.csv",
+      "name": "displaced_population--by--asylum_residence--origin--displacement_type--time",
+      "schema": {
+        "fields": [
+          {
+            "name": "asylum_residence"
+          },
+          {
+            "name": "origin"
+          },
+          {
+            "name": "displacement_type"
+          },
+          {
+            "name": "time"
+          },
+          {
+            "name": "displaced_population"
+          }
         ],
-        "datapoints": [
-            {
-                "primaryKey": [
-                    "asylum_residence",
-                    "displacement_type",
-                    "origin",
-                    "year"
-                ],
-                "value": "displaced_population",
-                "resources": [
-                    "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--year"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "asylum_residence",
-                    "displacement_type",
-                    "year"
-                ],
-                "value": "displaced_population",
-                "resources": [
-                    "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--year"
-                ]
-            }
+        "primaryKey": [
+          "asylum_residence",
+          "origin",
+          "displacement_type",
+          "time"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--displaced_population--by--asylum_residence--time.csv",
+      "name": "displaced_population--by--asylum_residence--time",
+      "schema": {
+        "fields": [
+          {
+            "name": "asylum_residence"
+          },
+          {
+            "name": "time"
+          },
+          {
+            "name": "displaced_population"
+          }
         ],
-        "synonyms": []
+        "primaryKey": [
+          "asylum_residence",
+          "time"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--displaced_population--by--origin--asylum_residence--time.csv",
+      "name": "displaced_population--by--origin--asylum_residence--time",
+      "schema": {
+        "fields": [
+          {
+            "name": "origin"
+          },
+          {
+            "name": "asylum_residence"
+          },
+          {
+            "name": "time"
+          },
+          {
+            "name": "displaced_population"
+          }
+        ],
+        "primaryKey": [
+          "origin",
+          "asylum_residence",
+          "time"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--displaced_population--by--origin--displacement_type--time.csv",
+      "name": "displaced_population--by--origin--displacement_type--time",
+      "schema": {
+        "fields": [
+          {
+            "name": "origin"
+          },
+          {
+            "name": "displacement_type"
+          },
+          {
+            "name": "time"
+          },
+          {
+            "name": "displaced_population"
+          }
+        ],
+        "primaryKey": [
+          "origin",
+          "displacement_type",
+          "time"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--displaced_population--by--origin--time.csv",
+      "name": "displaced_population--by--origin--time",
+      "schema": {
+        "fields": [
+          {
+            "name": "origin"
+          },
+          {
+            "name": "time"
+          },
+          {
+            "name": "displaced_population"
+          }
+        ],
+        "primaryKey": [
+          "origin",
+          "time"
+        ]
+      }
+    },
+    {
+      "path": "ddf--entities--asylum_residence.csv",
+      "name": "asylum_residence",
+      "schema": {
+        "fields": [
+          {
+            "name": "asylum_residence"
+          },
+          {
+            "name": "latitude"
+          },
+          {
+            "name": "longitude"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "world_4region"
+          }
+        ],
+        "primaryKey": "asylum_residence"
+      }
+    },
+    {
+      "path": "ddf--entities--displacement_type.csv",
+      "name": "displacement_type",
+      "schema": {
+        "fields": [
+          {
+            "name": "displacement_type"
+          },
+          {
+            "name": "name"
+          }
+        ],
+        "primaryKey": "displacement_type"
+      }
+    },
+    {
+      "path": "ddf--entities--origin.csv",
+      "name": "origin",
+      "schema": {
+        "fields": [
+          {
+            "name": "origin"
+          },
+          {
+            "name": "latitude"
+          },
+          {
+            "name": "longitude"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "world_4region"
+          }
+        ],
+        "primaryKey": "origin"
+      }
+    },
+    {
+      "path": "ddf--entities--world_4region.csv",
+      "name": "world_4region",
+      "schema": {
+        "fields": [
+          {
+            "name": "world_4region"
+          },
+          {
+            "name": "color"
+          },
+          {
+            "name": "description"
+          },
+          {
+            "name": "latitude"
+          },
+          {
+            "name": "longitude"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "name_long"
+          },
+          {
+            "name": "name_short"
+          },
+          {
+            "name": "rank"
+          },
+          {
+            "name": "shape_lores_svg"
+          }
+        ],
+        "primaryKey": "world_4region"
+      }
     }
+  ],
+  "ddfSchema": {
+    "datapoints": [
+      {
+        "primaryKey": [
+          "asylum_residence",
+          "displacement_type",
+          "origin",
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
+        ]
+      },
+      {
+        "primaryKey": [
+          "asylum_residence",
+          "displacement_type",
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--asylum_residence--displacement_type--time",
+          "displaced_population--by--asylum_residence--origin--displacement_type--time"
+        ]
+      },
+      {
+        "primaryKey": [
+          "asylum_residence",
+          "origin",
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--origin--asylum_residence--time"
+        ]
+      },
+      {
+        "primaryKey": [
+          "asylum_residence",
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--asylum_residence--time",
+          "displaced_population--by--origin--asylum_residence--time"
+        ]
+      },
+      {
+        "primaryKey": [
+          "displacement_type",
+          "origin",
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--asylum_residence--origin--displacement_type--time",
+          "displaced_population--by--origin--displacement_type--time"
+        ]
+      },
+      {
+        "primaryKey": [
+          "displacement_type",
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--asylum_residence--displacement_type--time",
+          "displaced_population--by--asylum_residence--origin--displacement_type--time",
+          "displaced_population--by--origin--displacement_type--time"
+        ]
+      },
+      {
+        "primaryKey": [
+          "origin",
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--origin--asylum_residence--time",
+          "displaced_population--by--origin--time"
+        ]
+      }
+    ],
+    "entities": [
+      {
+        "primaryKey": [
+          "asylum_residence"
+        ],
+        "value": "latitude",
+        "resources": [
+          "asylum_residence"
+        ]
+      },
+      {
+        "primaryKey": [
+          "asylum_residence"
+        ],
+        "value": "longitude",
+        "resources": [
+          "asylum_residence"
+        ]
+      },
+      {
+        "primaryKey": [
+          "asylum_residence"
+        ],
+        "value": "name",
+        "resources": [
+          "asylum_residence"
+        ]
+      },
+      {
+        "primaryKey": [
+          "asylum_residence"
+        ],
+        "value": "world_4region",
+        "resources": [
+          "asylum_residence"
+        ]
+      },
+      {
+        "primaryKey": [
+          "displacement_type"
+        ],
+        "value": "name",
+        "resources": [
+          "displacement_type"
+        ]
+      },
+      {
+        "primaryKey": [
+          "origin"
+        ],
+        "value": "latitude",
+        "resources": [
+          "origin"
+        ]
+      },
+      {
+        "primaryKey": [
+          "origin"
+        ],
+        "value": "longitude",
+        "resources": [
+          "origin"
+        ]
+      },
+      {
+        "primaryKey": [
+          "origin"
+        ],
+        "value": "name",
+        "resources": [
+          "origin"
+        ]
+      },
+      {
+        "primaryKey": [
+          "origin"
+        ],
+        "value": "world_4region",
+        "resources": [
+          "origin"
+        ]
+      },
+      {
+        "primaryKey": [
+          "time"
+        ],
+        "value": "displaced_population",
+        "resources": [
+          "displaced_population--by--asylum_residence--time",
+          "displaced_population--by--origin--asylum_residence--time",
+          "displaced_population--by--origin--time"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "color",
+        "resources": [
+          "world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "description",
+        "resources": [
+          "world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "latitude",
+        "resources": [
+          "world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "longitude",
+        "resources": [
+          "world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "name",
+        "resources": [
+          "world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "name_long",
+        "resources": [
+          "world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "name_short",
+        "resources": [
+          "world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "rank",
+        "resources": [
+          "world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_4region"
+        ],
+        "value": "shape_lores_svg",
+        "resources": [
+          "world_4region"
+        ]
+      }
+    ],
+    "concepts": [
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "color",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "concept_type",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "domain",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "name",
+        "resources": [
+          "ddf--concepts"
+        ]
+      }
+    ],
+    "synonyms": []
+  }
 }
