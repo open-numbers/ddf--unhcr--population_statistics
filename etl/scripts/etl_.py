@@ -34,7 +34,7 @@ def main():
 
     # hard coding some of them
     other_dict = {
-        'Serbia and Kosovo (S/RES/1244 (1999))': 'serbia_kosovo',
+        'Serbia and Kosovo (S/RES/1244 (1999))': 'srb',
         'Bonaire': 'bonaire',
         'Stateless': 'stateless',
         'Various/Unknown': 'various_unknown',

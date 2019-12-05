@@ -12,15 +12,33 @@
   "author": "",
   "resources": [
     {
-      "path": "ddf--concepts.csv",
-      "name": "ddf--concepts",
+      "path": "ddf--concepts--continuous.csv",
+      "name": "ddf--concepts--continuous",
       "schema": {
         "fields": [
           {
             "name": "concept"
           },
           {
+            "name": "concept_type"
+          },
+          {
             "name": "name"
+          },
+          {
+            "name": "domain"
+          }
+        ],
+        "primaryKey": "concept"
+      }
+    },
+    {
+      "path": "ddf--concepts--discrete.csv",
+      "name": "ddf--concepts--discrete",
+      "schema": {
+        "fields": [
+          {
+            "name": "concept"
           },
           {
             "name": "concept_type"
@@ -29,180 +47,180 @@
             "name": "domain"
           },
           {
+            "name": "name"
+          },
+          {
+            "name": "description"
+          },
+          {
+            "name": "source_url"
+          },
+          {
+            "name": "tags"
+          },
+          {
+            "name": "scales"
+          },
+          {
+            "name": "indicator_url"
+          },
+          {
             "name": "color"
+          },
+          {
+            "name": "drill_up"
+          },
+          {
+            "name": "unit"
           }
         ],
         "primaryKey": "concept"
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--asylum_residence--displacement_type--time.csv",
-      "name": "displaced_population--by--asylum_residence--displacement_type--time",
+      "path": "ddf--datapoints--population_arrived--by--geo--displacement_type--year.csv",
+      "name": "population_arrived--by--geo--displacement_type--year",
       "schema": {
         "fields": [
           {
-            "name": "asylum_residence"
+            "name": "geo"
           },
           {
             "name": "displacement_type"
           },
           {
-            "name": "time"
+            "name": "year"
           },
           {
-            "name": "displaced_population"
+            "name": "population_arrived"
           }
         ],
         "primaryKey": [
-          "asylum_residence",
+          "geo",
           "displacement_type",
-          "time"
+          "year"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--asylum_residence--origin--displacement_type--time.csv",
-      "name": "displaced_population--by--asylum_residence--origin--displacement_type--time",
+      "path": "ddf--datapoints--population_arrived--by--geo--year.csv",
+      "name": "population_arrived--by--geo--year",
       "schema": {
         "fields": [
           {
-            "name": "asylum_residence"
+            "name": "geo"
           },
           {
-            "name": "origin"
+            "name": "year"
+          },
+          {
+            "name": "population_arrived"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--population_left--by--geo--displacement_type--year.csv",
+      "name": "population_left--by--geo--displacement_type--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
           },
           {
             "name": "displacement_type"
           },
           {
-            "name": "time"
+            "name": "year"
           },
           {
-            "name": "displaced_population"
+            "name": "population_left"
           }
         ],
         "primaryKey": [
-          "asylum_residence",
-          "origin",
+          "geo",
           "displacement_type",
-          "time"
+          "year"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--asylum_residence--time.csv",
-      "name": "displaced_population--by--asylum_residence--time",
+      "path": "ddf--datapoints--population_left--by--geo--year.csv",
+      "name": "population_left--by--geo--year",
       "schema": {
         "fields": [
           {
-            "name": "asylum_residence"
+            "name": "geo"
           },
           {
-            "name": "time"
+            "name": "year"
           },
           {
-            "name": "displaced_population"
+            "name": "population_left"
           }
         ],
         "primaryKey": [
-          "asylum_residence",
-          "time"
+          "geo",
+          "year"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--origin--asylum_residence--time.csv",
-      "name": "displaced_population--by--origin--asylum_residence--time",
+      "path": "ddf--datapoints--population_moved--by--origin--destination--displacement_type--year.csv",
+      "name": "population_moved--by--origin--destination--displacement_type--year",
       "schema": {
         "fields": [
           {
             "name": "origin"
           },
           {
-            "name": "asylum_residence"
-          },
-          {
-            "name": "time"
-          },
-          {
-            "name": "displaced_population"
-          }
-        ],
-        "primaryKey": [
-          "origin",
-          "asylum_residence",
-          "time"
-        ]
-      }
-    },
-    {
-      "path": "ddf--datapoints--displaced_population--by--origin--displacement_type--time.csv",
-      "name": "displaced_population--by--origin--displacement_type--time",
-      "schema": {
-        "fields": [
-          {
-            "name": "origin"
+            "name": "destination"
           },
           {
             "name": "displacement_type"
           },
           {
-            "name": "time"
+            "name": "year"
           },
           {
-            "name": "displaced_population"
+            "name": "population_moved"
           }
         ],
         "primaryKey": [
           "origin",
+          "destination",
           "displacement_type",
-          "time"
+          "year"
         ]
       }
     },
     {
-      "path": "ddf--datapoints--displaced_population--by--origin--time.csv",
-      "name": "displaced_population--by--origin--time",
+      "path": "ddf--datapoints--population_moved--by--origin--destination--year.csv",
+      "name": "population_moved--by--origin--destination--year",
       "schema": {
         "fields": [
           {
             "name": "origin"
           },
           {
-            "name": "time"
+            "name": "destination"
           },
           {
-            "name": "displaced_population"
+            "name": "year"
+          },
+          {
+            "name": "population_moved"
           }
         ],
         "primaryKey": [
           "origin",
-          "time"
+          "destination",
+          "year"
         ]
-      }
-    },
-    {
-      "path": "ddf--entities--asylum_residence.csv",
-      "name": "asylum_residence",
-      "schema": {
-        "fields": [
-          {
-            "name": "asylum_residence"
-          },
-          {
-            "name": "latitude"
-          },
-          {
-            "name": "longitude"
-          },
-          {
-            "name": "name"
-          },
-          {
-            "name": "world_4region"
-          }
-        ],
-        "primaryKey": "asylum_residence"
       }
     },
     {
@@ -221,12 +239,111 @@
       }
     },
     {
-      "path": "ddf--entities--origin.csv",
-      "name": "origin",
+      "path": "ddf--entities--gender.csv",
+      "name": "gender",
       "schema": {
         "fields": [
           {
-            "name": "origin"
+            "name": "gender"
+          },
+          {
+            "name": "name"
+          }
+        ],
+        "primaryKey": "gender"
+      }
+    },
+    {
+      "path": "ddf--entities--geo--country.csv",
+      "name": "geo--country",
+      "schema": {
+        "fields": [
+          {
+            "name": "country"
+          },
+          {
+            "name": "g77_and_oecd_countries"
+          },
+          {
+            "name": "income_groups"
+          },
+          {
+            "name": "is--country"
+          },
+          {
+            "name": "iso3166_1_alpha2"
+          },
+          {
+            "name": "unicode_region_subtag"
+          },
+          {
+            "name": "iso3166_1_alpha3"
+          },
+          {
+            "name": "iso3166_1_numeric"
+          },
+          {
+            "name": "iso3166_2"
+          },
+          {
+            "name": "landlocked"
+          },
+          {
+            "name": "latitude"
+          },
+          {
+            "name": "longitude"
+          },
+          {
+            "name": "main_religion_2008"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "un_state"
+          },
+          {
+            "name": "world_4region"
+          },
+          {
+            "name": "world_6region"
+          }
+        ],
+        "primaryKey": "country"
+      }
+    },
+    {
+      "path": "ddf--entities--geo--g77_and_oecd_countries.csv",
+      "name": "geo--g77_and_oecd_countries",
+      "schema": {
+        "fields": [
+          {
+            "name": "g77_and_oecd_countries"
+          },
+          {
+            "name": "is--g77_and_oecd_countries"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "rank"
+          }
+        ],
+        "primaryKey": "g77_and_oecd_countries"
+      }
+    },
+    {
+      "path": "ddf--entities--geo--global.csv",
+      "name": "geo--global",
+      "schema": {
+        "fields": [
+          {
+            "name": "global"
+          },
+          {
+            "name": "is--global"
           },
           {
             "name": "latitude"
@@ -238,15 +355,81 @@
             "name": "name"
           },
           {
-            "name": "world_4region"
+            "name": "topojson"
+          },
+          {
+            "name": "unicode_region_subtag"
           }
         ],
-        "primaryKey": "origin"
+        "primaryKey": "global"
       }
     },
     {
-      "path": "ddf--entities--world_4region.csv",
-      "name": "world_4region",
+      "path": "ddf--entities--geo--income_groups.csv",
+      "name": "geo--income_groups",
+      "schema": {
+        "fields": [
+          {
+            "name": "income_groups"
+          },
+          {
+            "name": "is--income_groups"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "rank"
+          }
+        ],
+        "primaryKey": "income_groups"
+      }
+    },
+    {
+      "path": "ddf--entities--geo--landlocked.csv",
+      "name": "geo--landlocked",
+      "schema": {
+        "fields": [
+          {
+            "name": "landlocked"
+          },
+          {
+            "name": "is--landlocked"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "rank"
+          }
+        ],
+        "primaryKey": "landlocked"
+      }
+    },
+    {
+      "path": "ddf--entities--geo--main_religion_2008.csv",
+      "name": "geo--main_religion_2008",
+      "schema": {
+        "fields": [
+          {
+            "name": "main_religion_2008"
+          },
+          {
+            "name": "is--main_religion_2008"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "rank"
+          }
+        ],
+        "primaryKey": "main_religion_2008"
+      }
+    },
+    {
+      "path": "ddf--entities--geo--world_4region.csv",
+      "name": "geo--world_4region",
       "schema": {
         "fields": [
           {
@@ -257,6 +440,9 @@
           },
           {
             "name": "description"
+          },
+          {
+            "name": "is--world_4region"
           },
           {
             "name": "latitude"
@@ -282,127 +468,365 @@
         ],
         "primaryKey": "world_4region"
       }
+    },
+    {
+      "path": "ddf--entities--geo--world_6region.csv",
+      "name": "geo--world_6region",
+      "schema": {
+        "fields": [
+          {
+            "name": "world_6region"
+          },
+          {
+            "name": "is--world_6region"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "name_long"
+          },
+          {
+            "name": "name_short"
+          },
+          {
+            "name": "rank"
+          },
+          {
+            "name": "shape_lores_svg"
+          }
+        ],
+        "primaryKey": "world_6region"
+      }
+    },
+    {
+      "path": "ddf--entities--geo.csv",
+      "name": "geo",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "income_groups"
+          },
+          {
+            "name": "iso3166_1_alpha2"
+          },
+          {
+            "name": "unicode_region_subtag"
+          },
+          {
+            "name": "iso3166_1_alpha3"
+          },
+          {
+            "name": "iso3166_1_numeric"
+          },
+          {
+            "name": "iso3166_2"
+          },
+          {
+            "name": "landlocked"
+          },
+          {
+            "name": "latitude"
+          },
+          {
+            "name": "longitude"
+          },
+          {
+            "name": "main_religion_2008"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "un_state"
+          },
+          {
+            "name": "world_4region"
+          },
+          {
+            "name": "world_6region"
+          }
+        ],
+        "primaryKey": "geo"
+      }
     }
   ],
   "ddfSchema": {
     "datapoints": [
       {
         "primaryKey": [
-          "asylum_residence",
+          "country",
+          "displacement_type",
+          "year"
+        ],
+        "value": "population_arrived",
+        "resources": [
+          "population_arrived--by--geo--displacement_type--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country",
+          "displacement_type",
+          "year"
+        ],
+        "value": "population_left",
+        "resources": [
+          "population_left--by--geo--displacement_type--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country",
+          "year"
+        ],
+        "value": "population_arrived",
+        "resources": [
+          "population_arrived--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country",
+          "year"
+        ],
+        "value": "population_left",
+        "resources": [
+          "population_left--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "destination",
           "displacement_type",
           "origin",
-          "time"
+          "year"
         ],
-        "value": "displaced_population",
+        "value": "population_moved",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--time"
+          "population_moved--by--origin--destination--displacement_type--year"
         ]
       },
       {
         "primaryKey": [
-          "asylum_residence",
-          "displacement_type",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--displacement_type--time",
-          "displaced_population--by--asylum_residence--origin--displacement_type--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "asylum_residence",
+          "destination",
           "origin",
-          "time"
+          "year"
         ],
-        "value": "displaced_population",
+        "value": "population_moved",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--time"
-        ]
-      },
-      {
-        "primaryKey": [
-          "asylum_residence",
-          "time"
-        ],
-        "value": "displaced_population",
-        "resources": [
-          "displaced_population--by--asylum_residence--time",
-          "displaced_population--by--origin--asylum_residence--time"
+          "population_moved--by--origin--destination--year"
         ]
       },
       {
         "primaryKey": [
           "displacement_type",
-          "origin",
-          "time"
+          "geo",
+          "year"
         ],
-        "value": "displaced_population",
+        "value": "population_arrived",
         "resources": [
-          "displaced_population--by--asylum_residence--origin--displacement_type--time",
-          "displaced_population--by--origin--displacement_type--time"
+          "population_arrived--by--geo--displacement_type--year"
         ]
       },
       {
         "primaryKey": [
           "displacement_type",
-          "time"
+          "geo",
+          "year"
         ],
-        "value": "displaced_population",
+        "value": "population_left",
         "resources": [
-          "displaced_population--by--asylum_residence--displacement_type--time",
-          "displaced_population--by--asylum_residence--origin--displacement_type--time",
-          "displaced_population--by--origin--displacement_type--time"
+          "population_left--by--geo--displacement_type--year"
         ]
       },
       {
         "primaryKey": [
-          "origin",
-          "time"
+          "displacement_type",
+          "year"
         ],
-        "value": "displaced_population",
+        "value": "population_arrived",
         "resources": [
-          "displaced_population--by--origin--asylum_residence--time",
-          "displaced_population--by--origin--time"
+          "population_arrived--by--geo--displacement_type--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "displacement_type",
+          "year"
+        ],
+        "value": "population_left",
+        "resources": [
+          "population_left--by--geo--displacement_type--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "population_arrived",
+        "resources": [
+          "population_arrived--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "population_left",
+        "resources": [
+          "population_left--by--geo--year"
         ]
       }
     ],
     "entities": [
       {
         "primaryKey": [
-          "asylum_residence"
+          "country"
+        ],
+        "value": "g77_and_oecd_countries",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "income_groups",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "is--country",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "iso3166_1_alpha2",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "iso3166_1_alpha3",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "iso3166_1_numeric",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "iso3166_2",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "landlocked",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
         ],
         "value": "latitude",
         "resources": [
-          "asylum_residence"
+          "geo--country"
         ]
       },
       {
         "primaryKey": [
-          "asylum_residence"
+          "country"
         ],
         "value": "longitude",
         "resources": [
-          "asylum_residence"
+          "geo--country"
         ]
       },
       {
         "primaryKey": [
-          "asylum_residence"
+          "country"
+        ],
+        "value": "main_religion_2008",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
         ],
         "value": "name",
         "resources": [
-          "asylum_residence"
+          "geo--country"
         ]
       },
       {
         "primaryKey": [
-          "asylum_residence"
+          "country"
+        ],
+        "value": "un_state",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "unicode_region_subtag",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
         ],
         "value": "world_4region",
         "resources": [
-          "asylum_residence"
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "country"
+        ],
+        "value": "world_6region",
+        "resources": [
+          "geo--country"
         ]
       },
       {
@@ -416,49 +840,495 @@
       },
       {
         "primaryKey": [
-          "origin"
+          "g77_and_oecd_countries"
         ],
-        "value": "latitude",
+        "value": "is--g77_and_oecd_countries",
         "resources": [
-          "origin"
+          "geo--g77_and_oecd_countries"
         ]
       },
       {
         "primaryKey": [
-          "origin"
-        ],
-        "value": "longitude",
-        "resources": [
-          "origin"
-        ]
-      },
-      {
-        "primaryKey": [
-          "origin"
+          "g77_and_oecd_countries"
         ],
         "value": "name",
         "resources": [
-          "origin"
+          "geo--g77_and_oecd_countries"
         ]
       },
       {
         "primaryKey": [
-          "origin"
+          "g77_and_oecd_countries"
+        ],
+        "value": "rank",
+        "resources": [
+          "geo--g77_and_oecd_countries"
+        ]
+      },
+      {
+        "primaryKey": [
+          "gender"
+        ],
+        "value": "name",
+        "resources": [
+          "gender"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "color",
+        "resources": [
+          "geo--world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "description",
+        "resources": [
+          "geo--world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "g77_and_oecd_countries",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "income_groups",
+        "resources": [
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--country",
+        "resources": [
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--g77_and_oecd_countries",
+        "resources": [
+          "geo--g77_and_oecd_countries"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--global",
+        "resources": [
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--income_groups",
+        "resources": [
+          "geo--income_groups"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--landlocked",
+        "resources": [
+          "geo--landlocked"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--main_religion_2008",
+        "resources": [
+          "geo--main_religion_2008"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--world_4region",
+        "resources": [
+          "geo--world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--world_6region",
+        "resources": [
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "iso3166_1_alpha2",
+        "resources": [
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "iso3166_1_alpha3",
+        "resources": [
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "iso3166_1_numeric",
+        "resources": [
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "iso3166_2",
+        "resources": [
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "landlocked",
+        "resources": [
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "latitude",
+        "resources": [
+          "geo",
+          "geo--country",
+          "geo--global",
+          "geo--world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "longitude",
+        "resources": [
+          "geo",
+          "geo--country",
+          "geo--global",
+          "geo--world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "main_religion_2008",
+        "resources": [
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "name",
+        "resources": [
+          "geo",
+          "geo--country",
+          "geo--g77_and_oecd_countries",
+          "geo--global",
+          "geo--income_groups",
+          "geo--landlocked",
+          "geo--main_religion_2008",
+          "geo--world_4region",
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "name_long",
+        "resources": [
+          "geo--world_4region",
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "name_short",
+        "resources": [
+          "geo--world_4region",
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "rank",
+        "resources": [
+          "geo--g77_and_oecd_countries",
+          "geo--income_groups",
+          "geo--landlocked",
+          "geo--main_religion_2008",
+          "geo--world_4region",
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "shape_lores_svg",
+        "resources": [
+          "geo--world_4region",
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "topojson",
+        "resources": [
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "un_state",
+        "resources": [
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "unicode_region_subtag",
+        "resources": [
+          "geo",
+          "geo--country",
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
         ],
         "value": "world_4region",
         "resources": [
-          "origin"
+          "geo",
+          "geo--country"
         ]
       },
       {
         "primaryKey": [
-          "time"
+          "geo"
         ],
-        "value": "displaced_population",
+        "value": "world_6region",
         "resources": [
-          "displaced_population--by--asylum_residence--time",
-          "displaced_population--by--origin--asylum_residence--time",
-          "displaced_population--by--origin--time"
+          "geo",
+          "geo--country"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "is--global",
+        "resources": [
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "latitude",
+        "resources": [
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "longitude",
+        "resources": [
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "name",
+        "resources": [
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "topojson",
+        "resources": [
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "unicode_region_subtag",
+        "resources": [
+          "geo--global"
+        ]
+      },
+      {
+        "primaryKey": [
+          "income_groups"
+        ],
+        "value": "is--income_groups",
+        "resources": [
+          "geo--income_groups"
+        ]
+      },
+      {
+        "primaryKey": [
+          "income_groups"
+        ],
+        "value": "name",
+        "resources": [
+          "geo--income_groups"
+        ]
+      },
+      {
+        "primaryKey": [
+          "income_groups"
+        ],
+        "value": "rank",
+        "resources": [
+          "geo--income_groups"
+        ]
+      },
+      {
+        "primaryKey": [
+          "landlocked"
+        ],
+        "value": "is--landlocked",
+        "resources": [
+          "geo--landlocked"
+        ]
+      },
+      {
+        "primaryKey": [
+          "landlocked"
+        ],
+        "value": "name",
+        "resources": [
+          "geo--landlocked"
+        ]
+      },
+      {
+        "primaryKey": [
+          "landlocked"
+        ],
+        "value": "rank",
+        "resources": [
+          "geo--landlocked"
+        ]
+      },
+      {
+        "primaryKey": [
+          "main_religion_2008"
+        ],
+        "value": "is--main_religion_2008",
+        "resources": [
+          "geo--main_religion_2008"
+        ]
+      },
+      {
+        "primaryKey": [
+          "main_religion_2008"
+        ],
+        "value": "name",
+        "resources": [
+          "geo--main_religion_2008"
+        ]
+      },
+      {
+        "primaryKey": [
+          "main_religion_2008"
+        ],
+        "value": "rank",
+        "resources": [
+          "geo--main_religion_2008"
+        ]
+      },
+      {
+        "primaryKey": [
+          "year"
+        ],
+        "value": "population_arrived",
+        "resources": [
+          "population_arrived--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "year"
+        ],
+        "value": "population_left",
+        "resources": [
+          "population_left--by--geo--year"
         ]
       },
       {
@@ -467,7 +1337,7 @@
         ],
         "value": "color",
         "resources": [
-          "world_4region"
+          "geo--world_4region"
         ]
       },
       {
@@ -476,7 +1346,16 @@
         ],
         "value": "description",
         "resources": [
+          "geo--world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
           "world_4region"
+        ],
+        "value": "is--world_4region",
+        "resources": [
+          "geo--world_4region"
         ]
       },
       {
@@ -485,7 +1364,7 @@
         ],
         "value": "latitude",
         "resources": [
-          "world_4region"
+          "geo--world_4region"
         ]
       },
       {
@@ -494,7 +1373,7 @@
         ],
         "value": "longitude",
         "resources": [
-          "world_4region"
+          "geo--world_4region"
         ]
       },
       {
@@ -503,7 +1382,7 @@
         ],
         "value": "name",
         "resources": [
-          "world_4region"
+          "geo--world_4region"
         ]
       },
       {
@@ -512,7 +1391,7 @@
         ],
         "value": "name_long",
         "resources": [
-          "world_4region"
+          "geo--world_4region"
         ]
       },
       {
@@ -521,7 +1400,7 @@
         ],
         "value": "name_short",
         "resources": [
-          "world_4region"
+          "geo--world_4region"
         ]
       },
       {
@@ -530,7 +1409,7 @@
         ],
         "value": "rank",
         "resources": [
-          "world_4region"
+          "geo--world_4region"
         ]
       },
       {
@@ -539,7 +1418,61 @@
         ],
         "value": "shape_lores_svg",
         "resources": [
-          "world_4region"
+          "geo--world_4region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_6region"
+        ],
+        "value": "is--world_6region",
+        "resources": [
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_6region"
+        ],
+        "value": "name",
+        "resources": [
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_6region"
+        ],
+        "value": "name_long",
+        "resources": [
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_6region"
+        ],
+        "value": "name_short",
+        "resources": [
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_6region"
+        ],
+        "value": "rank",
+        "resources": [
+          "geo--world_6region"
+        ]
+      },
+      {
+        "primaryKey": [
+          "world_6region"
+        ],
+        "value": "shape_lores_svg",
+        "resources": [
+          "geo--world_6region"
         ]
       }
     ],
@@ -550,7 +1483,7 @@
         ],
         "value": "color",
         "resources": [
-          "ddf--concepts"
+          "ddf--concepts--discrete"
         ]
       },
       {
@@ -559,7 +1492,17 @@
         ],
         "value": "concept_type",
         "resources": [
-          "ddf--concepts"
+          "ddf--concepts--continuous",
+          "ddf--concepts--discrete"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "description",
+        "resources": [
+          "ddf--concepts--discrete"
         ]
       },
       {
@@ -568,7 +1511,26 @@
         ],
         "value": "domain",
         "resources": [
-          "ddf--concepts"
+          "ddf--concepts--continuous",
+          "ddf--concepts--discrete"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "drill_up",
+        "resources": [
+          "ddf--concepts--discrete"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "indicator_url",
+        "resources": [
+          "ddf--concepts--discrete"
         ]
       },
       {
@@ -577,7 +1539,44 @@
         ],
         "value": "name",
         "resources": [
-          "ddf--concepts"
+          "ddf--concepts--continuous",
+          "ddf--concepts--discrete"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "scales",
+        "resources": [
+          "ddf--concepts--discrete"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "source_url",
+        "resources": [
+          "ddf--concepts--discrete"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "tags",
+        "resources": [
+          "ddf--concepts--discrete"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "unit",
+        "resources": [
+          "ddf--concepts--discrete"
         ]
       }
     ],

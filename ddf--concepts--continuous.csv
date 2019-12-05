@@ -1,0 +1,4 @@
+concept,concept_type,name,domain
+population_left,measure,Displaced population: left,
+population_arrived,measure,Displaced population: arrived,
+population_moved,measure,Displaced population,
